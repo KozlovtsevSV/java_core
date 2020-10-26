@@ -30,7 +30,6 @@ public class Main {
         leepYear(2000);
         leepYear(2020);
         leepYear(2021);
-        
     }
 
     public static float calculation(float a, float b, float c, float d) {
