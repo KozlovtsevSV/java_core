@@ -25,24 +25,24 @@ public class Main {
     public static void main(String[] args) {
 
 //1
-        System.out.println("Залание № 1");
+        System.out.println("Задание № 1");
         int[] array = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
         printArray(array,"Массив исходный: ");
         printArray(reversArray(array),"Измененный массив: ");
 
 //2
-        System.out.println("Залание № 2");
+        System.out.println("Задание № 2");
         int[] array2 = new int[8];
         printArray(fillArray(array2,1,3),"Заполнить массив: ");
 
 //3
-        System.out.println("Залание № 3");
+        System.out.println("Задание № 3");
         int[] array3 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         printArray(array3,"Массив исходный: ");
         printArray(multiplication(array3,2,6),"Измененный массив: ");
 
 //4
-        System.out.println("Залание № 4");
+        System.out.println("Задание № 4");
         int[] array4 = new int[15];
         array4 = fillArrayRandom(array4,50);
         printArray(array4,"Массив исходный: ");
@@ -50,24 +50,24 @@ public class Main {
         System.out.println("Минимальное значение: " + minValueArray(array4));
 
 //5
-        System.out.println("Залание № 5");
+        System.out.println("Задание № 5");
         int sizeArray = 5;
         int[][] array5 = new int[sizeArray][sizeArray];
         printArraySqr(fillArrayCross(array5),"");
 //6
-        System.out.println("Залание № 6");
+        System.out.println("Задание № 6");
         int[] array6 = new int[4];
         array6 = fillArrayRandom(array6,5);
         printArray(array6,"Массив исходный: ");
         System.out.println("Массив сбалансирован? " + checkBalance(array6));
 //7
-        System.out.println("Залание № 7");
+        System.out.println("Задание № 7");
         int[] array7 = {1, 2, 3, 4, 5};
         int shift = -6;
         printArray(array7,"Массив исходный: \t");
         printArray(shiftArray(array7, shift),"Сместили массив на "+ shift +" результат: ");
 //8
-        System.out.println("Залание № 8");
+        System.out.println("Задание № 8");
         int[] array8 = {1, 2, 3, 4, 5, 6, 7, 8, 3};
         int[] array9 = {2, 4, 8, 5};
         printArray(array8,"Первый массив ");
