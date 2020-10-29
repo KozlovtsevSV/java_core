@@ -31,7 +31,7 @@ public class game {
         fieldSizeX = 5;
         fieldSizeY = 5;
         fieldWinSize = 4;
-        // подключение искуственного интелекта
+        // подключение искуственного интелекта можно отключить
         artificialIntelligence = true;
 
         fieldNextWinX = 0;
