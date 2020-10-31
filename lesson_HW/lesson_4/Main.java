@@ -25,7 +25,7 @@ public class Main {
 
         System.out.println("Сотрудники старше " + age + "лет:");
         for(Employee arrayEmployee : arrayEmployees) {
-            if(arrayEmployee.getAge() > 40 ){
+            if(arrayEmployee.getAge() > age ){
                 Employee.printEmployee(arrayEmployee);
                 System.out.println("---------------------------------------------");
             }
