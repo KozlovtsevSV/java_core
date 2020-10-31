@@ -4,11 +4,10 @@ public class Main {
 
     public static void increaseSalaryEmployees(Employee[] arrayEmployees, int age, float donate){
 
-        for (int i = 0; i < arrayEmployees.length; i++) {
-
-            if(arrayEmployees[i].getAge() > age ){
-                float salary = arrayEmployees[i].getSalary();
-                arrayEmployees[i].setSalary(salary += donate);
+        for(Employee arrayEmployee : arrayEmployees) {
+            if (arrayEmployee.getAge() > age) {
+                float salary = arrayEmployee.getSalary();
+                arrayEmployee.setSalary(salary += donate);
             }
         }
     }
@@ -16,8 +15,8 @@ public class Main {
     public static void printAllEmployee(Employee[] arrayEmployees){
 
         System.out.println("Все сотрудники:");
-        for (int i = 0; i < arrayEmployees.length; i++) {
-            Employee.printEmployee(arrayEmployees[i]);
+        for(Employee arrayEmployee : arrayEmployees) {
+            Employee.printEmployee(arrayEmployee);
             System.out.println("---------------------------------------------");
         }
     }
@@ -25,10 +24,9 @@ public class Main {
     public static void printEmployeeOlderAge(Employee[] arrayEmployees, int age){
 
         System.out.println("Сотрудники старше " + age + "лет:");
-        for(int i = 0; i < arrayEmployees.length; i++) {
-
-            if(arrayEmployees[i].getAge() > 40 ){
-                Employee.printEmployee(arrayEmployees[i]);
+        for(Employee arrayEmployee : arrayEmployees) {
+            if(arrayEmployee.getAge() > 40 ){
+                Employee.printEmployee(arrayEmployee);
                 System.out.println("---------------------------------------------");
             }
         }
